@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EL QUIZ DE LA FRIKI DE LARA</title>
+  <link rel="stylesheet" href="friki.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+  <h1>EL QUIZ DE LA FRIKI DE LARA</h1>
+<button id="empezar">Empezar el frikiquiz</button>
+  <!-- Muñeco animado -->
+  <div class="personaje-container">
+    <lottie-player id="personaje"
+      src="idle.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px;"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+
+  <!-- Pregunta actual -->
+  <div id="pregunta" class="pregunta"></div>
+
+  <!-- Opciones de respuesta -->
+  <div id="opciones" class="opciones"></div>
+
+  <!-- Resultado final -->
+  <div id="resultado" class="resultado"></div>
+
+  <!-- Botón de reinicio -->
+  <button id="reiniciar" style="display:none;">Reiniciar</button>
+
+  <!-- Script principal -->
+  <script src="quiz1.js"></script>
+
+</body>
+</html>
+
+
